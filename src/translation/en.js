@@ -1,0 +1,15 @@
+export default {
+    "sign_in": "Sign In",
+    "home": "Home",
+    "sign_up": "Sign Up",
+    "about": "About",
+    "profile": "Profile",
+    "logout": "Log Out",
+    "input_username": "Please input your username",
+    "input_password": "Please input your password",
+    "input_confirm_password": "Please input your confirm password",
+    "deferent_pass": "The two passwords that you entered do not match!",
+    "invalid_email": "Email is not validate email!",
+    "auth_error": "Authantication errror",
+    "successful_authorization": "Successful Authorization",
+}
