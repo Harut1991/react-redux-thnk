@@ -36,8 +36,8 @@ export function signUp(data, t) {
             }, 3000);
             
         }).then(res => {
-            dispatch(signUpSuccess(res));
             storageService.setItem('auth', res);
+            dispatch(signUpSuccess(res));
             message.success(t('successful_authorization'));
         }).catch(err => {
             dispatch(signUpInError());
@@ -72,8 +72,8 @@ export function signIn(data, t) {
             }, 3000);
 
         }).then(res => {
-            dispatch(signInSuccess(res));
             storageService.setItem('auth', res);
+            dispatch(signInSuccess(res));
             message.success(t('successful_authorization'));
         }).catch(err => {
             dispatch(signUpInError());

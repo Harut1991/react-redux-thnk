@@ -7,11 +7,9 @@ import AppRoute from "./AppRoute";
 const AppRouters = () => (
     <BrowserRouter>
         <Switch>
-            {Object.entries(routerList).map(res => {
-                return res[1].map(({component: Component, layout: Layout, ...data}) => {
-                    return <AppRoute layout={Layout ? Layout : MainLayout} component={Component} {...data} {...{type: res[0]}}/>
-                });                    
-            })}
+            {routerList.map(({component: Component, layout: Layout, ...data}, index) => (
+                <AppRoute key={index} layout={Layout ? Layout : MainLayout} component={Component} {...data} />
+            ))}
         </Switch>
     </BrowserRouter>
 )
